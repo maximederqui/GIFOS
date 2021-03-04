@@ -1,0 +1,172 @@
+/*Header Mobile*/
+.header {
+  background-color: white;
+  width: 100%;
+  z-index: 3;
+  position: relative;
+  border-top: 5px solid #572ee5;
+  display: block;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  margin: 7.733333vw 0 4.586666vw 5.86666vw;
+}
+
+.header .logo img {
+  width: 48.8px;
+  height: 48.8px;
+}
+
+.header #burguerBtn {
+  margin: 12.5333333vw 0 9.86666666vw 68.48vw;
+}
+
+.header .Background1 {
+  display: none;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background: white;
+  display: block;
+}
+
+.header ul li a {
+  color: #0045db;
+  display: block;
+  padding: 0px 0 24px 16px;
+  text-decoration: none;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header ul li .episodiosnav {
+  padding-top: 16px;
+}
+
+/*header tablet*/
+@media only screen and (min-width: 800px) {
+  .header .logo {
+    font-size: 3vw;
+  }
+}
+
+main #inicio #tituloInicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  margin-bottom: 31px;
+}
+
+main #inicio #tituloInicio h1 {
+  color: #572ee5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8vw;
+  line-height: 8.5vw;
+  text-align: center;
+}
+
+main #inicio #tituloInicio h1 #verde {
+  color: #5ed7c6;
+}
+
+.barraBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#ilustacion {
+  margin: 0 13.6% 0 13.6%;
+  width: 72.8%;
+}
+
+#busqueda {
+  text-align: center;
+  width: 90%;
+  height: 2.5rem;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: #572ee5 2px solid;
+  border-radius: 10vw;
+  border-color: #572ee5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#inputid {
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+
+#lupa {
+  text-align: center;
+  width: 5%;
+}
+
+#trendig div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#trendig div #tituloTrendig {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #572ee5;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 2px;
+  margin-top: 4vh;
+}
+
+#trendig div #textoTrending {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #572ee5;
+  line-height: 25px;
+  font-weight: 10;
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */

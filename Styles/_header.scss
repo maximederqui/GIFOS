@@ -1,0 +1,56 @@
+/*Header Mobile*/
+.header {
+  background-color: white;
+  width: 100%;
+  z-index: 3;
+  position: relative;
+  border-top: 5px solid #572ee5;
+  display: block;
+  .logo {
+    float: left;
+    display: block;
+    margin: 7.733333vw 0 4.586666vw 5.86666vw;
+    img {
+      width: 48.8px;
+      height: 48.8px;
+    }
+  }
+  #burguerBtn {
+    margin: 12.5333333vw 0 9.86666666vw 68.48vw;
+  }
+  .Background1 {
+    display: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background: white;
+    display: block;
+    li {
+      a {
+        color: rgb(0, 69, 219);
+        display: block;
+        padding: 0px 0 24px 16px;
+        text-decoration: none;
+        line-height: 28px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+      }
+      .episodiosnav {
+        padding-top: 16px;
+      }
+    }
+  }
+}
+
+/*header tablet*/
+@media only screen and (min-width: 800px) {
+  .header {
+    .logo {
+      font-size: 3vw;
+    }
+  }
+}

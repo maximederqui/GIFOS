@@ -1,0 +1,79 @@
+main {
+  #inicio {
+    #tituloInicio {
+      h1 {
+        color: #572ee5;
+        font-family: "Montserrat", sans-serif;
+        font-size: 8vw;
+        line-height: 8.5vw;
+        text-align: center;
+        #verde {
+          color: #5ed7c6;
+        }
+      }
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 100vw;
+      margin-bottom: 31px;
+    }
+  }
+}
+
+.barraBusqueda {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#ilustacion {
+  margin: 0 13.6% 0 13.6%;
+  width: 72.8%;
+}
+#busqueda {
+  text-align: center;
+  width: 90%;
+  height: 2.5rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: #572ee5 2px solid;
+  border-radius: 10vw;
+  border-color: #572ee5;
+  display: flex;
+  justify-content: space-around;
+}
+#inputid {
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+
+#lupa {
+  text-align: center;
+  width: 5%;
+}
+
+#trendig {
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #tituloTrendig {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #572ee5;
+      font-weight: bold;
+      line-height: 25px;
+      padding: 2px;
+      margin-top: 4vh;
+    }
+    #textoTrending {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-family: "Roboto", sans-serif;
+      color: #572ee5;
+      line-height: 25px;
+      font-weight: 10;
+      font-size: 1rem;
+    }
+  }
+}
+// 13.6% margin img (width 72.8%)
