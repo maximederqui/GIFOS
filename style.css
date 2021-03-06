@@ -63,12 +63,12 @@ main #inicio #tituloInicio {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 100vw;
   margin-bottom: 31px;
 }
@@ -90,12 +90,12 @@ main #inicio #tituloInicio h1 #verde {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #ilustacion {
@@ -109,7 +109,7 @@ main #inicio #tituloInicio h1 #verde {
   height: 2.5rem;
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border: #572ee5 2px solid;
   border-radius: 10vw;
   border-color: #572ee5;
@@ -117,7 +117,7 @@ main #inicio #tituloInicio h1 #verde {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 #inputid {
@@ -136,11 +136,11 @@ main #inicio #tituloInicio h1 #verde {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #trendig div #tituloTrendig {
@@ -163,10 +163,54 @@ main #inicio #tituloInicio h1 #verde {
   font-size: 1rem;
 }
 
+#footer {
+  border-bottom: 5px solid #572ee5;
+}
+
+.contentFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.textoFooter1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6.714285714285714vh 37.6vw 3.142857142857143vh 37.6vw;
+}
+
+.foto {
+  padding-right: 5.06vw;
+}
+
+.logos {
+  margin-left: 5vw;
+}
+
+.textoFooter2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-top: 6.57vh;
+  padding-bottom: 3.28571vh;
+}
+
+#trendingGIFOS {
+  margin-top: 10vw;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */

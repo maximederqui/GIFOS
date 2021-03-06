@@ -1,0 +1,28 @@
+#footer {
+  border-bottom: 5px solid #572ee5;
+}
+
+.contentFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.textoFooter1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6.714285714285714vh 37.6vw 3.142857142857143vh 37.6vw;
+}
+.foto {
+  padding-right: 5.06vw;
+}
+.logos {
+  margin-left: 5vw;
+}
+.textoFooter2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-top: 6.57vh;
+  padding-bottom: 3.28571vh;
+}
