@@ -34,12 +34,17 @@
         src="../GIFOS/assets/assets/burger.svg"
         alt="Boton menu hamburguesa"
       />
-      <div class="Background1"></div>
-      <!-- <ul class="menu"> -->
-      <!-- <li><a href="#" class="episodiosnav">Modo Nocturno</a></li>
+      <div class="Background1 hidden">
+
+      <ul class="menu">
+      <li><a href="#" class="episodiosnav">Modo Nocturno</a></li>
+      <hr>
         <li><a href="#">Favoritos</a></li>
+        <hr>
         <li><a href="#">Mis GIFOS</a></li>
-      </ul> -->
+        <hr>
+      </ul>
+    </div>
     </header>
 
     <main>
@@ -79,29 +84,88 @@
             Sports, Stickers, Artists
           </p>
         </div>
+      </section>
+      <section class="mascotas">
+        <h3>Mascotas</h3>
+        <div id="grid">
+          <img src="https://picsum.photos/156/120" alt="1" />
+          <img src="https://picsum.photos/156/120" alt="2" />
+          <img src="https://picsum.photos/156/120" alt="3" />
+          <img src="https://picsum.photos/156/120" alt="4" />
+          <img src="https://picsum.photos/156/120" alt="5" />
+          <img src="https://picsum.photos/156/120" alt="6" />
+          <img src="https://picsum.photos/156/120" alt="7" />
+          <img src="https://picsum.photos/156/120" alt="8" />
+          <img src="https://picsum.photos/156/120" alt="9" />
+          <img src="https://picsum.photos/156/120" alt="10" />
+          <img src="https://picsum.photos/156/120" alt="11" />
+          <img src="https://picsum.photos/156/120" alt="12" />
+        </div>
+        <button id="verMas">Ver Mas</button>
+      </section>
 
-        <section id="trendingGIFOS">
-          <h2 id="tituloTrendGifos"></h2>
-          <p>Mira los últimos GIFOS de nuestra comunidad.</p>
-          <div id="imgsTrendGifos">
-            <img src="" alt="Imagen de gato andando en motocicleta" id="imgTrendGifos1">
-            <img src="" alt="Imagen carrusel 2" id="imgTrendGifos2">
-          </div>
-        </section>
+      <section id="trendingGIFOS">
+        <h2 id="tituloTrendGifos">Trending GIFOS</h2>
+        <p id="parrafoTrend">
+          Mira los últimos <br />GIFOS de nuestra comunidad.
+        </p>
+      </section>
+        <section id="carrusel"></section>
+        <div id="imgsTrendGifos">
+          <img
+            src="https://picsum.photos/300/300"
+            alt="Imagen de gato andando en motocicleta"
+            id="imgTrendGifos1"
+          />
+          <img
+            src="https://picsum.photos/300/300"
+            alt="Imagen de gato andando en motocicleta"
+            id="imgTrendGifos2"
+          />
+          <img
+            src="https://picsum.photos/300/300"
+            alt="Imagen de gato andando en motocicleta"
+            id="imgTrendGifos3"
+          />
+          <img
+            src="https://picsum.photos/300/300"
+            alt="Imagen de gato andando en motocicleta"
+            id="imgTrendGifos4"
+          />
+          <img
+            src="https://picsum.photos/300/300"
+            alt="Imagen de gato andando en motocicleta"
+            id="imgTrendGifos5"
+          />
+        </div>
+      </section>
     </main>
-    <script src="./app.js"></script>
+
     <footer id="footer">
       <div class="contentFooter">
-
         <p class="textoFooter1">Compartir en:</p>
-  
-        <div class="logos"> <img class="foto" src="../GIFOS/assets/assets/icon_facebook.svg" alt="facebook">
-          <img  class="foto" src="../GIFOS/assets/assets/icon-twitter.svg" alt="twitter">
-          <img  class="foto" src="../GIFOS/assets/assets/icon_instagram.svg" alt="instagram">
+
+        <div class="logos">
+          <img
+            class="foto"
+            src="../GIFOS/assets/assets/icon_facebook.svg"
+            alt="facebook"
+          />
+          <img
+            class="foto"
+            src="../GIFOS/assets/assets/icon-twitter.svg"
+            alt="twitter"
+          />
+          <img
+            class="foto"
+            src="../GIFOS/assets/assets/icon_instagram.svg"
+            alt="instagram"
+          />
         </div>
 
         <p class="textoFooter2">© GIFOS 2020 All Rights Reserved.</p>
       </div>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
