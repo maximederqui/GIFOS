@@ -26,23 +26,24 @@
     <header class="header">
       <a class="logo"
         ><img
-          src="../GIFOS/assets/assets/logo-mobile.svg"
+          src="./../GIFOS/assets/assets/logo-mobile.svg"
           alt="Imagen-de-Logo-GIFOS"
       /></a>
       <img
         id="burguerBtn"
-        src="../GIFOS/assets/assets/burger.svg"
+        src="./../GIFOS/assets/assets/burger.svg"
         alt="Boton menu hamburguesa"
       />
-      <div class="Background1 hidden">
 
-      <ul class="menu">
-      <li><a href="#" class="episodiosnav">Modo Nocturno</a></li>
-      <hr>
-        <li><a href="#">Favoritos</a></li>
-        <hr>
-        <li><a href="#">Mis GIFOS</a></li>
-        <hr>
+
+      <div class="Background1">
+        <ul class="menu">
+          <li><a href="#" id="episodiosnav">Modo Nocturno</a></li>
+          <hr>
+          <li><a href="#" id="fav">Favoritos</a></li>
+          <hr>
+          <li><a href="#" id="misgif">Mis GIFOS</a></li>
+          <hr>
       </ul>
     </div>
     </header>
@@ -55,7 +56,7 @@
             <span id="verde">GIFOS</span>
           </h1>
         </div>
-        <div class="barraBusqueda">
+        <div class="barrabusqueda">
           <img
             id="ilustacion"
             src="../GIFOS/assets/assets/ilustra_header.svg"
@@ -65,41 +66,60 @@
             <input
               id="inputid"
               type="text"
-              id="searchterm"
               placeholder="Busca GIFOS y más"
-            />
-            <img
-              id="lupa"
-              src="../GIFOS/assets/assets/icon-search.svg"
-              alt="lupa"
-            />
+              />
+              <img
+                id="lupa"
+                src="../GIFOS/assets/assets/icon-search.svg"
+                alt="lupa"
+              />
           </div>
+        </div>
+        <div class="sugerenciasBusqueda">
+          <p>text 1</p>
+          <p>text 2</p>
+          <p>text 3</p>
+          <p>text 4</p>
         </div>
       </section>
       <section id="trendig">
         <div>
           <p id="tituloTrendig">Trending:</p>
           <p id="textoTrending">
-            Reactions, Entertainment,<br />
+            Reactions, Entertainment,<br id="br"/>
             Sports, Stickers, Artists
           </p>
         </div>
       </section>
+      <hr id="linea">
       <section class="mascotas">
-        <h3>Mascotas</h3>
+        <h3 id="tituloSearch">Mascotas</h3>
         <div id="grid">
-          <img src="https://picsum.photos/156/120" alt="1" />
-          <img src="https://picsum.photos/156/120" alt="2" />
-          <img src="https://picsum.photos/156/120" alt="3" />
-          <img src="https://picsum.photos/156/120" alt="4" />
-          <img src="https://picsum.photos/156/120" alt="5" />
-          <img src="https://picsum.photos/156/120" alt="6" />
-          <img src="https://picsum.photos/156/120" alt="7" />
-          <img src="https://picsum.photos/156/120" alt="8" />
-          <img src="https://picsum.photos/156/120" alt="9" />
-          <img src="https://picsum.photos/156/120" alt="10" />
-          <img src="https://picsum.photos/156/120" alt="11" />
-          <img src="https://picsum.photos/156/120" alt="12" />
+        </div>
+        <button id="verMas">Ver Mas</button>
+      </section>
+
+      <section class="favoritos">
+        <img src="../GIFOS/assets/assets/icon-favoritos.svg" alt="">
+        <h3 id="favsection">Favoritos</h3>
+        <div id="gridfavortitos"> 
+          <img src="https://media3.giphy.com/media/lIVbjCLNMSLdUWWkRK/200w.webp" alt="">
+          <img src="https://media1.giphy.com/media/kxrANnpcIlNiGPViUn/200w.webp" alt="">
+          <img src="https://media4.giphy.com/media/11JTxkrmq4bGE0/200.webp?cid=ecf05e47ru799j1krvohh6adhmnrj7iyk5dshqyzk3mjh50z&rid=200.webp" alt="">
+          <img src="https://media4.giphy.com/media/3o72F3oBDOsgITRaPS/giphy.webp?cid=ecf05e47ru799j1krvohh6adhmnrj7iyk5dshqyzk3mjh50z&rid=giphy.webp" alt="">
+          
+        </div>
+        <button id="verMas">Ver Mas</button>
+      </section>
+
+      <section class="misGifs">
+        <img src="../GIFOS/assets/assets/icon-mis-gifos.svg" alt="">
+        <h3 id="gifsection">Mis GIFOS</h3>
+        <div id="gridgifos">
+          <img src="https://media3.giphy.com/media/lIVbjCLNMSLdUWWkRK/200w.webp" alt="">
+          <img src="https://media1.giphy.com/media/kxrANnpcIlNiGPViUn/200w.webp" alt="">
+          <img src="https://media4.giphy.com/media/11JTxkrmq4bGE0/200.webp?cid=ecf05e47ru799j1krvohh6adhmnrj7iyk5dshqyzk3mjh50z&rid=200.webp" alt="">
+          <img src="https://media4.giphy.com/media/3o72F3oBDOsgITRaPS/giphy.webp?cid=ecf05e47ru799j1krvohh6adhmnrj7iyk5dshqyzk3mjh50z&rid=giphy.webp" alt="">
         </div>
         <button id="verMas">Ver Mas</button>
       </section>
@@ -107,36 +127,11 @@
       <section id="trendingGIFOS">
         <h2 id="tituloTrendGifos">Trending GIFOS</h2>
         <p id="parrafoTrend">
-          Mira los últimos <br />GIFOS de nuestra comunidad.
+          Mira los últimos <br id="br"/>GIFOS de nuestra comunidad.
         </p>
       </section>
         <section id="carrusel"></section>
         <div id="imgsTrendGifos">
-          <img
-            src="https://picsum.photos/300/300"
-            alt="Imagen de gato andando en motocicleta"
-            id="imgTrendGifos1"
-          />
-          <img
-            src="https://picsum.photos/300/300"
-            alt="Imagen de gato andando en motocicleta"
-            id="imgTrendGifos2"
-          />
-          <img
-            src="https://picsum.photos/300/300"
-            alt="Imagen de gato andando en motocicleta"
-            id="imgTrendGifos3"
-          />
-          <img
-            src="https://picsum.photos/300/300"
-            alt="Imagen de gato andando en motocicleta"
-            id="imgTrendGifos4"
-          />
-          <img
-            src="https://picsum.photos/300/300"
-            alt="Imagen de gato andando en motocicleta"
-            id="imgTrendGifos5"
-          />
         </div>
       </section>
     </main>
@@ -145,7 +140,7 @@
       <div class="contentFooter">
         <p class="textoFooter1">Compartir en:</p>
 
-        <div class="logos">
+        <a href="./index.html"><div class="logos"> </a>
           <img
             class="foto"
             src="../GIFOS/assets/assets/icon_facebook.svg"

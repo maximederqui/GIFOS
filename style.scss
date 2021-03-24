@@ -9,10 +9,18 @@
 @import "../GIFOS/Styles/_trendingGifos";
 
 @import "../GIFOS/Styles/mascotas";
+
+@import "../GIFOS/Styles/favoritos";
+
+@import "../GIFOS/Styles/misGIFOS";
+
+@import "../GIFOS/Styles/mediaQuerys";
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
 }
 
+// body {
+//   overflow-x: hidden;
+// }

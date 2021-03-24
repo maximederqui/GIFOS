@@ -1,0 +1,212 @@
+@media screen and (min-width: 900px) {
+  // HEADER
+
+  .header {
+    justify-content: space-around;
+    #burguerBtn {
+      display: none;
+    }
+
+    .logo img {
+      margin-left: 5.85vw;
+      position: relative;
+      top: -6vw;
+    }
+    .Background1 {
+      display: flex;
+      justify-content: flex-end;
+      background-color: transparent;
+      width: 100%;
+      height: 5rem;
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+
+        #episodiosnav {
+          color: #572ee5;
+          padding-right: 1.61vw;
+          padding-top: 2.3vw;
+        }
+        #fav {
+          color: #572ee5;
+          padding-right: 1.61vw;
+          padding-top: 2.3vw;
+        }
+        #misgif {
+          color: #572ee5;
+          margin-right: 1.61vw;
+          padding-top: 2.3vw;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: block;
+}
+
+hr {
+  display: none;
+}
+
+// INICO
+
+@media screen and (min-width: 900px) {
+  main {
+    #inicio {
+      #tituloInicio {
+        h1 {
+          color: #572ee5;
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.9vw;
+          line-height: 2.5vw;
+          text-align: center;
+          width: 35.025vw;
+          height: 1.75vw;
+          #verde {
+            color: #5ed7c6;
+          }
+        }
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100vw;
+        margin-bottom: 31px;
+      }
+      .barrabusqueda {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        #busqueda #inputid {
+          font-family: "Roboto", sans-serif;
+          text-align: center;
+          width: 50%;
+          height: 2.5rem;
+          margin-left: 51%;
+          transform: translateX(-50%);
+          border: #572ee5 2px solid;
+          border-radius: 10vw;
+          border-color: #572ee5;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+  #ilustacion {
+    display: flex;
+    text-align: center;
+    width: 35vw;
+    margin-left: 35%;
+    margin-top: 3vw;
+  }
+
+  #lupa {
+    text-align: center;
+    margin-left: 43%;
+    bottom: 4.59358vh;
+    position: relative;
+  }
+
+  #trendig {
+    div {
+      #textoTrending {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-family: "Roboto", sans-serif;
+        color: #572ee5;
+        line-height: 25px;
+        font-weight: 10;
+        font-size: 1rem;
+        #br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// TRENDING
+
+@media screen and (min-width: 900px) {
+  #trendingGIFOS {
+    margin-top: 2rem;
+    #tituloTrendGifos {
+      color: #572ee5;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.33vw;
+    }
+  }
+  #parrafoTrend {
+    font-family: "Roboto", sans-serif;
+    font-weight: "700";
+    margin: 3vw;
+    br {
+      display: none;
+    }
+  }
+}
+
+// CARRUSEL
+
+@media screen and (min-width: 900px) {
+  #imgsTrendGifos {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    flex-direction: row;
+    padding: 10px 0px 10px 0px;
+    height: 18rem;
+    background-color: #f3f5f8;
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 25px;
+    }
+  }
+}
+
+// FOOTER
+
+@media screen and (min-width: 900px) {
+  #footer {
+    border-bottom: 5px solid #572ee5;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .contentFooter {
+    flex-direction: row;
+    display: flex;
+  }
+  .textoFooter1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    width: 10rem;
+    margin: 3rem 0rem 3rem 3rem;
+    padding: 0px;
+  }
+  .foto {
+    padding-right: 2.06vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .logos {
+    margin-left: 1vw;
+    flex-direction: row;
+    display: flex;
+  }
+  .textoFooter2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding-top: 6.57vh;
+    padding-bottom: 3.28571vh;
+    margin-left: 48rem;
+    font-size: 13px;
+  }
+}

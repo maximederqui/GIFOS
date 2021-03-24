@@ -16,24 +16,24 @@
     }
   }
   #burguerBtn {
-    margin: 12.5333333vw 0 9.86666666vw 68.48vw;
+    margin: 12.5333333vw 0 9.86666666vw 85.48vw;
+    display: flex;
   }
+
   .Background1 {
     width: 100%;
-    background-color: #572EE5;
+    background-color: #572ee5;
     opacity: 0.9;
-    height: 30rem;
+    height: 250vw;
     z-index: -5;
     position: absolute;
     text-align: center;
-    display: flex;
+    display: none;
     justify-content: center;
- 
   }
 
   .hidden {
-    display: none;
-
+    display: flex;
   }
 
   ul {
@@ -49,21 +49,19 @@
       a {
         color: rgb(255, 255, 255);
         display: block;
-        padding: 10px 0 24px 16px;
+        padding: 10px 0 15px 16px;
         line-height: 28px;
         font-size: 16px;
         text-decoration: none;
         font-weight: 600;
         font-family: "Montserrat", sans-serif;
-        
       }
-
     }
   }
 }
 
-.episodiosnav {
-  padding-top: 16px;
+#episodiosnav {
+  padding-top: 20px;
 }
 
 /*header tablet*/

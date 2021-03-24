@@ -25,11 +25,29 @@ main {
   justify-content: center;
   flex-direction: column;
 }
+
+.sugerenciasBusqueda {
+  display: none;
+}
+
 #ilustacion {
   margin: 0 13.6% 0 13.6%;
   width: 72.8%;
 }
-#busqueda {
+// #busqueda {
+//   text-align: center;
+//   width: 90%;
+//   height: 2.5rem;
+//   margin-left: 50%;
+//   transform: translateX(-50%);
+//   border: #572ee5 2px solid;
+//   border-radius: 10vw;
+//   border-color: #572ee5;
+//   display: flex;
+//   justify-content: space-around;
+// }
+#inputid {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   width: 90%;
   height: 2.5rem;
@@ -41,14 +59,19 @@ main {
   display: flex;
   justify-content: space-around;
 }
-#inputid {
-  font-family: "Roboto", sans-serif;
-  border: none;
-}
 
 #lupa {
   text-align: center;
-  width: 5%;
+  margin-left: 83.96vw;
+  bottom: 7.13358vh;
+  position: relative;
+}
+
+#linea {
+  width: 50%;
+  color: black;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 #trendig {
