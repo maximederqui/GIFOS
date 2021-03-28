@@ -4,18 +4,15 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color:#F3F5F8 ;
-  padding-top: 5vw ;
+  background-color: #f3f5f8;
+  padding-top: 5vw;
   flex-wrap: wrap;
-    #tituloTrendGifos {
-      color: #572ee5;
-      font-family: "Montserrat", sans-serif;
-      font-size: 5.33vw ;
-        
+  #tituloTrendGifos {
+    color: #572ee5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5.33vw;
+  }
 }
-}
-
-
 
 #parrafoTrend {
   font-family: "Roboto", sans-serif;
@@ -26,16 +23,13 @@
 #imgsTrendGifos {
   position: relative;
   display: flex;
-  width: 100vw;
-  overflow: scroll ;
+  overflow: scroll;
   flex-direction: row;
   padding: 10px;
   height: 15rem;
-  background-color:#F3F5F8;
+  background-color: #f3f5f8;
   img {
     width: 200px;
     height: 200px;
   }
-
 }
-

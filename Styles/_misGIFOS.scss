@@ -1,17 +1,29 @@
 .misGifs {
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
+  margin-top: 15vw;
+  #carita {
+    width: 24px;
+    height: 21px;
+    margin-bottom: 1.9vw;
   }
- 
-#gridgifos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 2fr);
-    grid-gap: 5.6vw;
-    margin-left: 5.6vw;
-    margin-right: 5.6vw;
-    img {
-        width: 41.6vw;
-    }
+}
 
+#gridgifos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 2fr);
+  grid-gap: 5.6vw;
+  margin-left: 5.85vw;
+  margin-right: 5.85vw;
+  img {
+    width: 41.6vw;
+  }
+}
+
+#gifsection {
+  font-size: 2vw;
+  margin: auto;
+  margin-bottom: 3.9vw;
+  margin-top: 1vw;
 }

@@ -90,6 +90,7 @@ let favgrid = document.querySelector(".favoritos");
 
 fav.addEventListener("click", () => {
   inicio.style.display = "none";
+  gifssection.style.display = "none";
   trending.style.display = "none";
   favsection.style.display = "block";
   favgrid.style.display = "block";
@@ -102,26 +103,26 @@ migif.addEventListener("click", () => {
   inicio.style.display = "none";
   trending.style.display = "none";
   barrita.style.display = "none";
+  favgrid.style.display = "none";
   h3.style.display = "block";
   gifssection.style.display = "block";
   back.classList.toggle("hidden");
   menu.src = "./../GIFOS/assets/assets/burger.svg";
 });
 
-// async function busquedafav() {
-//   let url1 =
-//     "https://api.giphy.com/v1/gifs/random?api_key=P006ylmrABdk3f6kVUjdOUVMkQ6tIcqV&tag=cat&rating=g" +
-//     parameters +
-//     offset;
-//   let resultado = await fetch(url1);
-//   let info = await resultado.json();
-//   console.log(info.data.images.fixed_height.url);
+async function busquedafav() {
+  let url1 =
+    "https://api.giphy.com/v1/gifs/random?api_key=P006ylmrABdk3f6kVUjdOUVMkQ6tIcqV&tag=cat&rating=g" +
+    parameters +
+    offset;
+  let resultado = await fetch(url1);
+  let info = await resultado.json();
 
-//   info.data.forEach((gif) => {
-//     favgrid.innerHTML += `
-//     <div id="fotogif">
-//     <img src="${gif.images.fixed_height.url}" alt="" />
-//     </div>
-//     `;
-//   });
-// }
+  info.data.forEach((gif) => {
+    favgrid.innerHTML += `
+    <div id="fotogif">
+    <img src="${gif.images.fixed_height.url}" alt="" />
+    </div>
+    `;
+  });
+}

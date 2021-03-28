@@ -1,17 +1,18 @@
 #gridfavortitos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 2fr);
-    grid-gap: 5.6vw;
-    margin-left: 5.6vw;
-    margin-right: 5.6vw;
-    img {
-        width: 41.6vw;
-    }
-} 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 2fr);
+  grid-gap: 5.6vw;
+  margin-left: 5.6vw;
+  margin-right: 5.6vw;
+  img {
+    width: 41.6vw;
+  }
+}
 
 .favoritos {
-    display: none;
-    margin: auto;
-    text-align: center;
-  }
+  display: none;
+  margin: auto;
+  text-align: center;
+  margin-top: 15vw;
+}
