@@ -1,6 +1,6 @@
 @import "../GIFOS/Styles/_header.scss";
 
-@import "../GIFOS/Styles/_menu.scss";
+@import "../GIFOS/Styles/_crearGif.scss";
 
 @import "../GIFOS/Styles/_inicio.scss";
 
@@ -8,13 +8,13 @@
 
 @import "../GIFOS/Styles/_trendingGifos";
 
-@import "../GIFOS/Styles/mascotas";
+@import "../GIFOS/Styles/_mascotas";
 
-@import "../GIFOS/Styles/favoritos";
+@import "../GIFOS/Styles/_favoritos";
 
-@import "../GIFOS/Styles/misGIFOS";
+@import "../GIFOS/Styles/_misGIFOS";
 
-@import "../GIFOS/Styles/mediaQuerys";
+@import "../GIFOS/Styles/_mediaQuerys";
 
 * {
   margin: 0;

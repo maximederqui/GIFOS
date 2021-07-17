@@ -24,11 +24,12 @@
   </head>
   <body>
     <header class="header">
-     
+
+      <a href="index.html">
         <img class="logo"
           src="./../GIFOS/assets/assets/logo-mobile.svg"
           alt="Imagen-de-Logo-GIFOS"
-      />
+      /> </a>
       <img
         id="burguerBtn"
         src="./../GIFOS/assets/assets/burger.svg"
@@ -43,6 +44,10 @@
           <li><a href="#" id="fav">Favoritos</a></li>
           <hr>
           <li><a href="#" id="misgif">Mis GIFOS</a></li>
+          <hr>
+          <li id="btnCrearGifos"><a href="#"><img boleano="false" onmouseover="setImgCrearGifosNueva()"
+            onmouseout="setImgVolver()" id="imgBtnCrearGifos"
+            src="./assets/assets/button-crear-gifo.svg" alt="imagen crear gifos"></a></li>
           <hr>
       </ul>
     </div>
@@ -82,7 +87,9 @@
           <p>text 4</p>
         </div>
       </section>
-      <section id="trendig">
+
+
+      <section id="trending">
         <div>
           <p id="tituloTrendig">Trending:</p>
           <p id="textoTrending">
@@ -100,27 +107,39 @@
       </section>
 
       <section class="favoritos">
-        <img src="../GIFOS/assets/assets/icon-favoritos.svg" alt="">
+        <img id="corazon-icon" src="../GIFOS/assets/assets/icon-favoritos.svg" alt="">
         <h3 id="favsection">Favoritos</h3>
-        <div id="gridfavortitos"> 
-          <img src="https://media3.giphy.com/media/lIVbjCLNMSLdUWWkRK/200w.webp" alt="">
-          <img src="https://media1.giphy.com/media/kxrANnpcIlNiGPViUn/200w.webp" alt="">
-          <img src="https://media4.giphy.com/media/11JTxkrmq4bGE0/200.webp?cid=ecf05e47ru799j1krvohh6adhmnrj7iyk5dshqyzk3mjh50z&rid=200.webp" alt="">
-          <img src="https://media4.giphy.com/media/3o72F3oBDOsgITRaPS/giphy.webp?cid=ecf05e47ru799j1krvohh6adhmnrj7iyk5dshqyzk3mjh50z&rid=giphy.webp" alt="">
-          
+
+        <div id="noresults">
+            <img class="icon-no" src="../GIFOS/assets/assets/icon-fav-sin-contenido.svg" alt="">
+            <p id="aviso">"¡Guarda tu primer GIFO en Favoritos 
+            </p>
+      </div>
+
+        <div id="gridfavortitos">
         </div>
         <button id="verMas">Ver Mas</button>
       </section>
 
-      <section class="misGifs">
-        <img id="carita" src="../GIFOS/assets/assets/icon-mis-gifos.svg" alt="">
-        <h3 id="gifsection">Mis GIFOS</h3>
-        <div id="gridgifos">
-          <img src="https://media3.giphy.com/media/lIVbjCLNMSLdUWWkRK/200w.webp" alt="">
-          <img src="https://media1.giphy.com/media/kxrANnpcIlNiGPViUn/200w.webp" alt="">
-          <img src="https://media4.giphy.com/media/11JTxkrmq4bGE0/200.webp?cid=ecf05e47ru799j1krvohh6adhmnrj7iyk5dshqyzk3mjh50z&rid=200.webp" alt="">
-          <img src="https://media4.giphy.com/media/3o72F3oBDOsgITRaPS/giphy.webp?cid=ecf05e47ru799j1krvohh6adhmnrj7iyk5dshqyzk3mjh50z&rid=giphy.webp" alt="">
+      <section id="sectionMisGifos">
+        <img id="icon_MisGifos" src="./assets/assets/icon-mis-gifos.svg" alt="imagen_cara_feliz">
+        <h2 id="tituloMisGifos">Mis GIFOS</h2>
+        <div id="galeriaMisGifos"></div>
+        <div id="btnVerMasMisGifos">
+            <img src="./assets/assets/CTA-ver-mas.svg" id="verMasMisGifos">
         </div>
+    </section>
+
+          <div id="noresultsGif">
+            <img class="icon-no"  src="../GIFOS/assets/assets/icon-mis-gifos-sin-contenido.svg" alt="">
+            <p id="aviso">¡Anímate a crear tu primer GIFO!
+            </p>
+          </div>
+
+
+        <div id="gridgifos">
+        </div>
+
         <button id="verMas">Ver Mas</button>
       </section>
 
@@ -130,11 +149,116 @@
           Mira los últimos <br id="br"/>GIFOS de nuestra comunidad.
         </p>
       </section>
-        <section id="carrusel"></section>
-        <div id="imgsTrendGifos">
-        </div>
+
+       <!--  carrusel  -->
+        <section id="carrusel">
+          <div id="imgsTrendGifos">
+          </div>
+          <div id="acciones">
+              <img id="next" class="botones" src="../GIFOS/assets/assets/button-slider-left.svg" alt="flecha1">
+              <img id="prev" class="botones" src="../GIFOS/assets/assets/Button-Slider-right.svg" alt="flecha2">
+          </div>
       </section>
     </main>
+
+<!-- CREAR GIFOS  -->
+
+<section id="creadorGifos">
+  <div id="parteGrabar">
+      <div id="camaraYLuz">
+          <img src="./assets/assets/camara.svg" id="imgCamara" alt="imagen de camara de grabacion antigua">
+          <img src="./assets/assets/element-luz-camara.svg" id="luz" alt="imagen luz de proyectores">
+      </div>
+      <div id="grabador">
+          <div id="grabacionInterfaz">
+              <div id="grabacionUsuario">
+                  <div id="cuadradosArriba">
+                      <div id="cuadrado1"></div>
+                      <div id="cuadrado2"></div>
+                  </div>
+                  <div id="textosGrabacionYVideo">
+                      <div id="textoGrabacionYvideoPintado">
+                          <div id="cuadrosVideoPintado">
+                              <img id="btnDescargarVideoPintado" src="./assets/assets/icon-download.svg"
+                                  alt="imagen descargar">
+                              <img id="btnCompartirVideoPintado" src="./assets/assets/icon-link-normal.svg"
+                                  alt="imagen de compartir video">
+                          </div>
+                          <img id="imgCargando" src="./assets/assets/loader.svg" alt="simbolo de cargando">
+                          <h3 id="textoSubiendoGifo">Estamos subiendo tu GIFO</h3>
+                      </div>
+                      <video id="video" autoplay></video>
+                      <img id="mostrarVideo" alt="lugar donde se mostrara el video">
+                      <h2 id="tituloGrabacion">Aquí podrás<br>crear tus propios <span
+                              id="spanGifos">GIFOS</span></h2>
+                      <p id="textoGrabacion1">¡Crea tu GIFO en sólo 3 pasos!</p>
+                      <p id="textoGrabacion2">(sólo necesitas una cámara para grabar un video)</p>
+                  </div>
+                  <div id="cuadradosAbajo">
+                      <div id="cuadrado3"></div>
+                      <div id="cuadrado4"></div>
+                  </div>
+              </div>
+          </div>
+          <div id="btnsGrabacionYCronometro">
+              <div id="btnsGrabacion">
+                  <div id="btnGrabacion1">
+                      <p id="textBtnGrabacion1">1</p>
+                  </div>
+                  <div id="btnGrabacion2">
+                      <p id="textBtnGrabacion2">2</p>
+                  </div>
+                  <div id="btnGrabacion3">
+                      <p id="textBtnGrabacion3">3</p>
+                  </div>
+              </div>
+              <div id="cronometro">
+                  <span id="minutero">00</span><span id="segundero">00</span><span
+                      id="centisegundos">00</span>
+              </div>
+              <div id="textoSubrayado">
+                  <p id="textoCronometro">REPETIR CAPTURA</p>
+                  <div id="subrayadoDelTexto"></div>
+              </div>
+
+          </div>
+      </div>
+      <div id="pelicula">
+          <img id="imgPelicula" src="./assets/assets/pelicula.svg" alt="imagen de pelicula">
+      </div>
+  </div>
+  <div id="separadorGrabacion"></div>
+  <div id="btnComenzar">
+      <p id="textoBtnComenzar">COMENZAR</p>
+  </div>
+  <div id="btnGrabar">
+      <p id="textoBtnGrabar">GRABAR</p>
+  </div>
+  <div id="btnFinalizar">
+      <p id="textoBtnFinalizar">FINALIZAR</p>
+  </div>
+  <div id="btnSubirGifo">
+      <p id="textoBtnSubirGifo">SUBIR GIFO</p>
+  </div>
+</section>
+<section id="sectionImagenAmplificada">
+  <div id="cruzImgAmplificada">
+      <img id="cruzImgAmplificadaBtn" src="./assets/assets/close.svg" alt="imagenCruzCerrar">
+  </div>
+  <div id="imgAmplificadaCtn">
+      <img id="imgAmplificada" key="" src="" alt="imagenAmplificada">
+      <div id="pieDeImg">
+          <div id="infoUsuario">
+              <p id="nombreUsuario">user</p>
+              <p id="tituloGif">titulo</p>
+          </div>
+          <div id="botonesImgAmpliada">
+              <img id="btnFavImgAmpliada" src="./assets/assets/icon-fav-hover.svg" alt="imagenBotonFavoritos">
+              <img id="btnDescargarImgAmpliada" src="./assets/assets/icon-download.svg"
+                  alt="imagenBotonDescarga">
+
+
+ <!-- // footer // -->
 
     <footer id="footer">
       <div class="contentFooter">
@@ -161,6 +285,16 @@
         <p class="textoFooter2">© GIFOS 2020 All Rights Reserved.</p>
       </div>
     </footer>
-    <script src="./app.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./AppJs/menu.js"></script>
+    <script src="./AppJs/buscador.js"></script>
+    <script src="./AppJs/creados.js"></script>
+    <script src="./AppJs/carrusel.js"></script>
+    <script src="./AppJs/favorito.js"></script>
+    <script src="./AppJs/misgifos.js"></script>
+    <script src="./AppJs/funciones.js"></script>
+
+    
+
   </body>
 </html>

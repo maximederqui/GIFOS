@@ -1,7 +1,6 @@
 #gridfavortitos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 2fr);
   grid-gap: 5.6vw;
   margin-left: 5.6vw;
   margin-right: 5.6vw;
@@ -15,4 +14,20 @@
   margin: auto;
   text-align: center;
   margin-top: 15vw;
+}
+
+#aviso {
+  font-size: 15px;
+  color: #5ed7c6;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+}
+
+#noresults {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.icon-no {
+  width: 18vw;
 }

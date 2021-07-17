@@ -12,7 +12,6 @@
 #gridgifos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 2fr);
   grid-gap: 5.6vw;
   margin-left: 5.85vw;
   margin-right: 5.85vw;
@@ -26,4 +25,9 @@
   margin: auto;
   margin-bottom: 3.9vw;
   margin-top: 1vw;
+}
+
+#noresultsGif {
+  text-align: center;
+  padding-top: 5rem;
 }
